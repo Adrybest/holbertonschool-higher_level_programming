@@ -3,7 +3,7 @@ def roman_to_int(roman_string):
     if (not isinstance(roman_string, str)) or roman_string is None:
         return (0)
 
-    roman_value = {
+    roman_val = {
             'I': 1,
             'V': 5,
             'X': 10,
@@ -15,12 +15,12 @@ def roman_to_int(roman_string):
     res = 0
 
     for i in range(len(roman_string)):
-        if roman_value.get(roman_string[i], 0) == 0:
+        if roman_val.get(roman_string[i], 0) == 0:
             return (0)
 
         if (i != (len(roman_string) - 1) and
-                roman_value[roman_string[i]] < roman_value[roman_string[i + 1]]):
-                res += roman_value[roman_string[i]] * -1
+                roman_val[roman_string[i]] < roman_val[roman_string[i + 1]]):
+                res += roman_val[roman_string[i]] * -1
         else:
-            res += roman_value[roman_string[i]]
+            res += roman_val[roman_string[i]]
     return (res)
