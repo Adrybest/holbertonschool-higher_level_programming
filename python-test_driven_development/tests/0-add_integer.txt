@@ -1,7 +1,13 @@
+Doctest for 0-add_integer.py
+
+The function return the addition of 'a' and 'b'
+
 >>> add_integer = __import__('0-add_integer').add_integer
 
+================
 Test for success
 ================
+
 >>> add_integer(2, 4)
 6
 
@@ -16,6 +22,9 @@ Test for success
 
 >>> add_integer(27, -17)
 10
+
+>>> add_integer(20)
+118
 
 =============
 Test for fail
