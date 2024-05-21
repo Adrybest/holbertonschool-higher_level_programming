@@ -44,7 +44,3 @@ ZeroDivisionError: division by zero
 >>> matrix_divided([[3,2,1]], None)
 Traceback (most recent call last):
 TypeError: div must be a number
-
->>> matrix_divided([[1, 2, 3], [4, 5, 6]], vodk)
-Traceback (most recent call last):
-TypeError: div must be a number
