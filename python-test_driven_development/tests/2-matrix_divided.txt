@@ -47,3 +47,7 @@ ZeroDivisionError: division by zero
 >>> matrix_divided([[3,2,1]], None)
 Traceback (most recent call last):
 TypeError: div must be a number
+
+>>> matrix_divided(None, None)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
