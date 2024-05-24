@@ -76,7 +76,7 @@ class Rectangle:
         rect_1 (Rectangle): The first Rectangle.
         rect_2 (Rectangle): The second Rectangle
 
-        Raises: 
+        Raises:
             TypeError: If either of rect_1 or rect_2 is not a Rectangle
         """
         if not isinstance(rect_1, Rectangle):
