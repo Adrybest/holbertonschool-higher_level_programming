@@ -53,3 +53,19 @@ TypeError: {'a': 1} must be an integer
 >>> bg.integer_validator()
 Traceback (most recent call last):
 TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+>>> bg.integer_validator("passe", (9, 6, 2))
+Traceback (most recent call last):
+TypeError: passe must be an integer
+
+>>> bg.integer_validator("caca", True)
+Traceback (most recent call last):
+TypeError: caca must be an integer
+
+>>> bg.integer_validator("maes", {0, 4})
+Traceback (most recent call last):
+TypeError: maes must be an integer
+
+>>> bg.integer_validator("rien ne passe j'en ai marre", None)
+Traceback (most recent call last):
+TypeError: rien ne passe j'en ai marre must be an integer
