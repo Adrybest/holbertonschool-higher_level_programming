@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """Task 4: Flying Fish"""
 
+
 class Fish:
     """A Fish"""
     def swim(self):
         print("The fish lives in water.")
+
 
 class Bird:
     """A Bird"""
@@ -13,6 +15,7 @@ class Bird:
 
     def habitat(self):
         print("The bird lives in the sky.")
+
 
 class FlyingFish(Fish, Bird):
     """A Flying Fish"""
