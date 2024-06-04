@@ -1,3 +1,3 @@
 FROM alpine:latest
-RUN apk add --no-cache curl
-COPY config.txt /app/config
+RUN apk add --no-cache bash
+CMD ["echo", "Hello, World!"]
