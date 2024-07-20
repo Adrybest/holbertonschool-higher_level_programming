@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+"""
+lists all states from the database `hbtn_0e_0_usa`.
+
+Arguments:
+    username: username of the MySQL
+    password: password of the MySQL
+    database: database name of the MySQL server
+"""
 
 if __name__ == "__main__":
     import MySQLdb
