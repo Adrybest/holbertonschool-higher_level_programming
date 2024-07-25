@@ -1,5 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
-	document.querySelector('update_header').addEventListener('click', function() {
-			document.querySelector('header').textContent = 'New Header!!!';
-	});
-});
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('header');
+    const updateHeader = document.getElementById('update_header');
+    updateHeader.addEventListener('click', function() {
+      header.textContent = 'New Header!!!';
+    });
+  });
